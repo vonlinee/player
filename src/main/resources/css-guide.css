@@ -1,0 +1,15 @@
+.button {
+    /*文字填充颜色*/
+    -fx-text-fill: #070707;
+    /*-fx-font-family: "Arial Narrow";*/
+    /*-fx-font-weight: bold;*/
+    /*去掉边框*/
+    /*-fx-background-insets: 0;*/
+    /*背景色线性渐变*/
+    /*-fx-background-color: linear-gradient(#fdfdfd, #bfd0d4);*/
+    /*阴影效果*/
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+    /*线性渐变*/
+    -fx-background-color: linear-gradient(#e3eff3, #ffffff);
+
+}

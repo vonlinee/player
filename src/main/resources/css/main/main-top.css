@@ -1,0 +1,50 @@
+#mainTopRoot{
+    -fx-background-color: #3ab678;
+}
+
+
+.button{
+    -fx-background-color: #3ab678;
+}
+
+#titleBar {
+    /*titleBar高度*/
+    -fx-pref-height: 62px;
+    -fx-background-color: #BC2F2E;
+}
+
+#searchInput{
+    -fx-background-color: #0a0a0a;
+    /*背景圆角*/
+    -fx-background-radius: 20px;
+    -fx-opacity: 0.2;
+    -fx-pref-height: 15;
+    -fx-wrap-text: false;
+    -fx-text-fill: #090808;
+}
+
+#left_HBox {
+    -fx-alignment: center;
+    -fx-padding: 0 0 0 10px;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+#labelTitle {
+    -fx-font-size: 20px;
+    /*字体，中文需要单引号''*/
+    -fx-font-family: '华文中宋';
+
+    /*-fx-padding: 15 7 7 20;*/
+}
+
+#logoLabel {
+    /*Logo标签*/
+    -fx-padding: 15 0 15 5; /*上右下左*/
+}
+
+#topbar_right {
+    -fx-padding: 15 5 15 0; /*上右下左*/
+}

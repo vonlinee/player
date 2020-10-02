@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.controller.main.TopController"
+            fx:id="mainTopRoot"
+            minHeight="64" maxHeight="64" prefHeight="64"
+            stylesheets="@/css/main/main-top.css">
+    <left>
+        <HBox spacing="5">
+            <ImageView fitHeight="25" fitWidth="25" preserveRatio="true" pickOnBounds="true" opacity="0.5">
+                <HBox.margin>
+                    <Insets top="18" left="10"/>
+                </HBox.margin>
+                <Image url="@/img/netease-logo.png"/>
+            </ImageView>
+            <Label fx:id="logoLabel" text="网易云音乐" textAlignment="CENTER">
+                <BorderPane.margin>
+                    <Insets left="10"/>
+                </BorderPane.margin>
+                <font>
+                    <Font name="方正兰亭" size="22.0"/>
+                </font>
+            </Label>
+        </HBox>
+    </left>
+    <center>
+        <AnchorPane>
+            <TextField AnchorPane.topAnchor="18" AnchorPane.leftAnchor="200" fx:id="searchInput" prefWidth="350" maxWidth="350" minWidth="350" maxHeight="28" minHeight="28" prefHeight="28" promptText="搜索音乐，视频，歌词，电台" text="搜索音乐，视频，歌词，电台">
+                <HBox.margin>
+                    <Insets top="18" left="10"/>
+                </HBox.margin>
+            </TextField>
+        </AnchorPane>
+    </center>
+    <right>
+        <HBox fx:id="topBar" alignment="CENTER_RIGHT" minWidth="500" maxWidth="500" prefWidth="500">
+            <spacing>10</spacing>
+            <Label text="开通VIP" alignment="CENTER">
+                
+            </Label>
+            <Button onMouseClicked="#openSettingsPane">
+                <graphic>
+                    <ImageView  pickOnBounds="true" preserveRatio="true" fitHeight="20" HBox.hgrow="NEVER">
+                        <Image url="@/img/theme.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Button onMouseClicked="#openSettingsPane">
+                <graphic>
+                    <ImageView  pickOnBounds="true" preserveRatio="true" fitHeight="15" HBox.hgrow="NEVER">
+                        <Image url="@/img/message.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Button onMouseClicked="#openSettingsPane">
+                <graphic>
+                    <ImageView  pickOnBounds="true" preserveRatio="true" fitHeight="20" HBox.hgrow="NEVER">
+                        <Image url="@/img/settings.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Separator fx:id="separator" orientation="VERTICAL" minWidth="1" prefWidth="1" maxWidth="1"
+                prefHeight="35" minHeight="35" maxHeight="35" style="-fx-background-color: red">
+                <padding>
+                    <Insets left="10" right="10"/>
+                </padding>
+            </Separator>
+            <padding>
+                <Insets right="9"/>
+            </padding>
+            <Button onMouseClicked="#minmize">
+                <graphic>
+                    <ImageView  pickOnBounds="true" preserveRatio="true" fitHeight="15" HBox.hgrow="NEVER">
+                        <Image url="@/img/minmize.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Button onMouseClicked="#maxmize">
+                <graphic>
+                    <ImageView  pickOnBounds="true" preserveRatio="true" fitHeight="15" HBox.hgrow="NEVER">
+                        <Image url="@/img/maxsize.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Button onMouseClicked="#exit">
+                <graphic>
+                    <ImageView  pickOnBounds="true" preserveRatio="true" fitHeight="15" HBox.hgrow="NEVER">
+                        <Image url="@/img/exit.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+        </HBox>
+    </right>
+</BorderPane>

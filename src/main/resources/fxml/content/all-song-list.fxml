@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox xmlns="http://javafx.com/javafx"
+      fx:id="contentRoot"
+      fx:controller="app.controller.content.AllSongListController"
+      xmlns:fx="http://javafx.com/fxml" spacing="10">
+    <padding>
+        <Insets top="20" left="20" right="20"/>
+    </padding>
+    <Label textFill="#707070" text="推荐歌单">
+        <font>
+            <Font name="KaiTi" size="28.0"/>
+        </font>
+    </Label>
+    <VBox fx:id="recomendSongList" prefWidth="${contentRoot.prefWidth}">
+        <padding>
+            <Insets top="10" left="10" right="10"/>
+        </padding>
+        <spacing>10</spacing>
+        <opaqueInsets>
+            <Insets/>
+        </opaqueInsets>
+        <!--第1行-->
+        <HBox fx:id="row1" spacing="10">
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+        </HBox>
+        <!--第2行-->
+        <HBox fx:id="row2" spacing="10">
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+        </HBox>
+        <!--第3行-->
+        <HBox fx:id="row3" spacing="10">
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+        </HBox>
+        <!--第4行-->
+        <HBox fx:id="row4" spacing="10">
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+        </HBox>
+        <!--第5行-->
+        <HBox fx:id="row5" spacing="10">
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+        </HBox>
+        <HBox fx:id="row6" spacing="10">
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+        </HBox>
+        <HBox fx:id="row7" spacing="10">
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+            <VBox prefHeight="0.0" prefWidth="0.0" spacing="10.0" style="-fx-border-color: black" onMouseClicked="#openSongListDetail">
+                <ImageView fitHeight="125.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label contentDisplay="CENTER" minHeight="30.0" prefWidth="125.0" textFill="#707070"
+                       wrapText="true">
+                    <font>
+                        <Font name="KaiTi" size="14.0"/>
+                    </font>
+                </Label>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </VBox>
+        </HBox>
+    </VBox>
+</VBox>

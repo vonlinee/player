@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx"
+      fx:id="findMusicContent"
+      fx:controller="app.controller.content.FindMusicController"
+      stylesheets="@/css/center/find-music.css"
+      xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <HBox fx:id="btnGroup" alignment="CENTER" spacing="10">
+            <padding>
+                <Insets topRightBottomLeft="0"/>
+            </padding>
+            <VBox.margin>
+                <Insets left="35" right="35"/>
+            </VBox.margin>
+            <Label text="个性推荐" textAlignment="CENTER" onMouseClicked="#openRecomendList">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Label>
+            <Label text="歌单" textAlignment="CENTER" onMouseClicked="#openAllSongList">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Label>
+            <Label text="主播电台" textAlignment="CENTER">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Label>
+        
+            <Label text="排行榜" textAlignment="CENTER">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Label>
+            <Label text="歌手" textAlignment="CENTER">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Label>
+            <Label text="最新音乐" textAlignment="CENTER">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Label>
+        </HBox>
+    </top>
+    <center>
+        <fx:include fx:id="findMusicCenterNode" source="recomend.fxml"/>
+    </center>
+</BorderPane>

@@ -1,0 +1,24 @@
+#progressSlider .track {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+#progressSlider .thumb {
+    -fx-background-color: #ffffff;
+    -fx-cursor: hand;
+}
+
+#soundSlider .track {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+#soundSlider .thumb {
+    -fx-background-color: #ffffff;
+    -fx-cursor: hand;
+}
+
+#progressRectangle,#soundRectangle{
+    -fx-fill: #c3c3c3;
+    -fx-background-color: red;
+}

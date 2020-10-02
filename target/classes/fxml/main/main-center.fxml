@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="mainCenterRoot"
+            fx:controller="app.controller.center.MainCenterController">
+
+    <left>
+        <fx:include fx:id="mainCenterLeft" source="/fxml/center/main-center-left.fxml"/>
+    </left>
+    <center>
+        <fx:include fx:id="mainCenterCenter" source="/fxml/center/main-center-center.fxml"/>
+    </center>
+</BorderPane>

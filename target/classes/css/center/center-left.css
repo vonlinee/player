@@ -1,0 +1,20 @@
+.button:hover {
+    -fx-background-color: #e6e7ea;
+}
+
+.button,.label{
+    -fx-background-color: #f5f5f7;
+    -fx-border-width: 0 0 0 5;
+    -fx-border-color: #e6e7ea;
+}
+
+.button:focused{
+    -fx-background-color: #e6e7ea;
+    -fx-border-width: 0 0 0 5;
+    -fx-border-color: #3bba7d;
+}
+
+
+#currentSongInfo{
+    -fx-background-color: #f5f5f6;
+}

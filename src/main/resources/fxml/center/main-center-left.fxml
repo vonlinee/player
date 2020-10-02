@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.Cursor?>
+<VBox xmlns="http://javafx.com/javafx"
+      fx:id="mainCenterLeftRoot"
+      fx:controller="app.controller.center.MainCenterLeftController"
+      stylesheets="@/css/center/center-left.css"
+      minWidth="300" prefWidth="300" maxWidth="400"
+      xmlns:fx="http://javafx.com/fxml">
+    
+    <ScrollPane fx:id="leftSiderBar">
+        <VBox fx:id="tabs" spacing="10">
+            <Button text="推荐"  fx:id="recomendTab" alignment="CENTER_LEFT" disable="true" minHeight="40" maxHeight="40" prefHeight="40"/>
+            <Button text="发现音乐" fx:id="findMusicTab" alignment="CENTER_LEFT" graphicTextGap="5" onMouseClicked="#openFindMusicPane" minHeight="40" maxHeight="40" prefHeight="40">
+                <graphic>
+                    <ImageView preserveRatio="true" fitHeight="20">
+                        <Image url="@/img/music-btn.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Button text="我的音乐" fx:id="myMusicTab" alignment="CENTER_LEFT" graphicTextGap="5" onMouseClicked="#openMyMusicPane" minHeight="40" maxHeight="40" prefHeight="40">
+                <graphic>
+                    <ImageView preserveRatio="true" fitHeight="20">
+                        <Image url="@/img/local-music-btn.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+        </VBox>
+    </ScrollPane>
+    <HBox fx:id="currentSongInfo" minHeight="68" maxHeight="68" prefHeight="68">
+        <padding>
+            <Insets top="3" left="3" bottom="3" right="3"/>
+        </padding>
+        <ImageView fx:id="songImg" fitWidth="60" fitHeight="60"/>
+        <VBox alignment="CENTER" spacing="4">
+            <Label fx:id="singerName" text="歌手名"/>
+            <Label fx:id="songName" text="歌名"/>
+        </VBox>
+    </HBox>
+
+</VBox>

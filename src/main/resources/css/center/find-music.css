@@ -1,0 +1,37 @@
+#findMusicContent{
+    -fx-background-color: #fafafa;
+}
+
+#btnGroup{
+    -fx-background-color: #fafafa;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #7d7878;
+}
+
+
+.label{
+    -fx-background-color: #fafafa;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #f4fff4;
+    -fx-wrap-text: false;
+    -fx-font-family: '方正兰亭圆简体';
+    -fx-font-size: 18;
+    -fx-min-width: 100;
+    -fx-max-width: 100;
+    -fx-pref-width: 100;
+    -fx-min-height: 60;
+    -fx-max-height: 60;
+    -fx-pref-height: 60;
+    -fx-text-alignment: center;
+}
+.label:focused{
+    -fx-background-color: red;
+}
+
+/*.label:focused{*/
+/*    -fx-border-width: 0 0 2 0;*/
+/*    -fx-border-color: #2bcb2b;*/
+/*    -fx-wrap-text: false;*/
+/*    -fx-text-fill: #2bcb2b;*/
+/*}*/
+  

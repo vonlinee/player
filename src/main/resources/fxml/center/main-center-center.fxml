@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--ScrollPane不能做根节点-->
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<StackPane xmlns="http://javafx.com/javafx"
+           fx:id="mainCenterCenterRoot"
+           fx:controller="app.controller.center.MainCenterCenController"
+           style="-fx-background-color: transparent"
+           xmlns:fx="http://javafx.com/fxml">
+
+    <ScrollPane fx:id="contentRoot" hbarPolicy="NEVER">
+        <!--作为Content的fxml的根元素都是BorderPane-->
+        <BorderPane fx:id="content"/>
+    </ScrollPane>
+</StackPane>

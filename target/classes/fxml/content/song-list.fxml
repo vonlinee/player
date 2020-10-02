@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            fx:id="contentRoot"
+            fx:controller="app.controller.content.SongListController"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <!--歌单详情-->
+        <HBox fx:id="songListDetail" prefWidth="${contentRoot.prefWidth}" spacing="20">
+            <padding>
+                <Insets top="10" bottom="10" left="10" right="10"/>
+            </padding>
+            <ImageView fx:id="playListImage" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true"/>
+            <VBox fx:id="introduction">
+                <Button layoutX="200.0" layoutY="30.0" mnemonicParsing="false"
+                        style="-fx-background-color: rgba(0, 0, 0, 0);">
+                    <graphic>
+                        <SVGPath
+                                content="M65.1,488.8c0-0.5,0.2-0.9,0.5-1.2l9.8-9.4c0.3-0.3,0.8-0.6,1.4-0.9c0.6-0.2,1.1-0.4,1.6-0.4h5.7c0.5,0,0.9,0.2,1.2,0.5c0.3,0.3,0.5,0.7,0.5,1.2v5.5c0,0.5-0.1,1-0.4,1.5c-0.3,0.6-0.5,1-0.9,1.3l-9.8,9.4c-0.3,0.3-0.8,0.5-1.2,0.5c-0.5,0-0.9-0.2-1.3-0.5l-6.7-6.5C65.3,489.7,65.1,489.3,65.1,488.8 M80.3,482.4c0.3,0.3,0.8,0.5,1.2,0.5s0.9-0.2,1.2-0.5c0.3-0.3,0.5-0.7,0.5-1.2c0-0.5-0.2-0.9-0.5-1.2c-0.3-0.3-0.8-0.5-1.2-0.5s-0.9,0.2-1.2,0.5s-0.5,0.7-0.5,1.2C79.7,481.7,79.9,482.1,80.3,482.4 M60.3,487.6l9.8-9.4c0.3-0.3,0.8-0.6,1.4-0.9c0.6-0.2,1.1-0.4,1.6-0.4h3.1c-0.5,0-1,0.1-1.6,0.4c-0.6,0.2-1.1,0.5-1.4,0.9l-9.8,9.4c-0.3,0.4-0.5,0.7-0.5,1.2c0,0.5,0.2,0.9,0.5,1.2l6.4,6.2c-0.2,0.2-0.5,0.4-0.7,0.6c-0.2,0.1-0.5,0.2-0.8,0.2c-0.5,0-0.9-0.2-1.3-0.5l-6.7-6.5c-0.3-0.3-0.5-0.7-0.5-1.2C59.8,488.4,60,488,60.3,487.6"/>
+                    </graphic>
+                </Button>
+                <Label fx:id="playListTitle" >
+                </Label>
+                <Label fx:id="playListInfo" textFill="#707070" wrapText="true">
+                </Label>
+            </VBox>
+        </HBox>
+    </top>
+    <center>
+        <!--歌曲列表-->
+        <HBox>
+            <TableView fx:id="netSongsList" prefWidth="${contentRoot.prefWidth}">
+                <columns>
+                    <TableColumn fx:id="netEaseId" prefWidth="75.0"/>
+                    <TableColumn fx:id="netEaseTitle" prefWidth="75.0" text="音乐标题"/>
+                    <TableColumn fx:id="netEaseAuthor" prefWidth="75.0" text="歌手"/>
+                    <TableColumn fx:id="netEaseAlbum" prefWidth="75.0" text="专辑"/>
+                    <TableColumn fx:id="netEaseTime" prefWidth="75.0" text="时长"/>
+                </columns>
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>
+            </TableView>
+        </HBox>
+    </center>
+</BorderPane>

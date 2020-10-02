@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import app.util.SVGGlyph?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="mainBottomRoot"
+            maxHeight="60" minHeight="60" prefHeight="60"
+            fx:controller="app.controller.main.BottomController"
+            stylesheets="@/css/main/main-bottom.css"
+            style="-fx-background-color: #f6f6f8;">
+    <left>
+        <HBox fx:id="playControllBox" minWidth="300" maxWidth="300" prefWidth="300" spacing="30" alignment="CENTER">
+            <padding>
+                <Insets topRightBottomLeft="3"/>
+            </padding>
+            <Button onMouseClicked="#previous" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0"
+                    style="-fx-background-color: rgba(255, 255, 255, 0);">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+                <graphic>
+                    <SVGPath fx:id="previous"
+                             content="M-104.2,399.3l6.8,4.6c0.3,0.2,0.8,0.1,1-0.2c0.1-0.1,0.1-0.3,0.1-0.4v-9.3c0-0.4-0.3-0.7-0.7-0.7 c-0.2,0-0.3,0-0.4,0.1l-6.8,4.6c-0.3,0.2-0.4,0.7-0.2,1C-104.3,399.2-104.3,399.3-104.2,399.3z M-106.8,394.7v8.2 c0,0.4,0.3,0.7,0.7,0.7c0.4,0,0.7-0.3,0.7-0.7v-8.2c0-0.4-0.3-0.7-0.7-0.7C-106.5,393.9-106.8,394.2-106.8,394.7z M-101.3,415.5 c-9.3,0-16.8-7.5-16.8-16.8s7.5-16.8,16.8-16.8s16.8,7.5,16.8,16.8S-92,415.5-101.3,415.5z"
+                             fill="#1296db"/>
+                </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#togglePlay" prefHeight="50.0" prefWidth="50.0"
+                    style="-fx-background-color: rgba(255, 255, 255, 0);">
+                <graphic>
+                    <SVGPath fx:id="playOrPauseSvg"
+                             content="M-44.7,455.9c-8.7,0-15.8,7.1-15.8,15.8s7.1,15.8,15.8,15.8s15.8-7.1,15.8-15.8 C-28.8,463-35.9,455.9-44.7,455.9z M-37.7,472.5l-9.1,6.8c-0.2,0.1-0.3,0.2-0.5,0.2c-0.5,0-0.9-0.4-0.9-0.9l0,0v-13.7 c0-0.5,0.4-0.9,0.9-0.9c0.2,0,0.4,0.1,0.5,0.2l9.1,6.8c0.4,0.3,0.5,0.9,0.2,1.3C-37.6,472.4-37.7,472.4-37.7,472.5z"
+                             fill="#1296db" scaleX="1.4" scaleY="1.4"/>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#next" prefHeight="50.0" prefWidth="50.0"
+                    style="-fx-background-color: rgba(255, 255, 255, 0);">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+                <graphic>
+                    <SVGPath fx:id="next"
+                             content="M-98.3,398.2l-6.8-4.6c-0.3-0.2-0.8-0.1-1,0.2c-0.1,0.1-0.1,0.3-0.1,0.4v9.3c0,0.4,0.3,0.7,0.7,0.7 c0.2,0,0.3,0,0.4-0.1l6.8-4.6c0.3-0.2,0.4-0.7,0.2-1C-98.2,398.3-98.2,398.2-98.3,398.2z M-95.7,402.8v-8.2c0-0.4-0.3-0.7-0.7-0.7 c-0.4,0-0.7,0.3-0.7,0.7v8.2c0,0.4,0.3,0.7,0.7,0.7C-96,403.6-95.7,403.3-95.7,402.8z M-101.3,382c9.3,0,16.8,7.5,16.8,16.8 s-7.5,16.8-16.8,16.8S-118,408-118,398.8S-110.5,382-101.3,382z"
+                             fill="#1296db"/>
+                </graphic>
+            </Button>
+        </HBox>
+    </left>
+    <center>
+        <!--进度条-->
+        <HBox fx:id="playStatus" alignment="CENTER" spacing="10">
+            <padding>
+                <Insets topRightBottomLeft="10"/>
+            </padding>
+            <Label textAlignment="CENTER" fx:id="currentTime" wrapText="true" minWidth="50" maxWidth="50" prefWidth="50" text="00:00"/>
+            <AnchorPane fx:id="progressPane" stylesheets="@/css/view/color-slider.css">
+                <Rectangle fx:id="progressRectangle" arcWidth="5" arcHeight="5" AnchorPane.topAnchor="18"/>
+                <Slider fx:id="progressSlider" AnchorPane.topAnchor="12"/>
+            </AnchorPane>
+            <Label textAlignment="CENTER" wrapText="true" fx:id="totalTime" minWidth="50" maxWidth="50" prefWidth="50" text="00:00"/>
+        </HBox>
+    </center>
+    <right>
+        <HBox fx:id="playModelBox" spacing="5" minWidth="400" maxWidth="400" prefWidth="400" alignment="CENTER">
+            <Button mnemonicParsing="false" onMouseClicked="#toggleSound" prefHeight="30.0" prefWidth="30.0" maxHeight="30.0"
+                    style="-fx-background-color: rgba(255, 255, 255, 0);">
+                <graphic>
+                    <SVGPath fx:id="sound"
+                             content="M-32,472.3C-32,472.3-32,472.3-32,472.3l-2.3,0c-0.4,0-0.8,0.3-0.8,0.8v5.4c0,0.4,0.3,0.8,0.8,0.8h2.3c0,0,0,0,0,0v0l5.6,3.6c0.1,0.1,0.3,0.2,0.5,0.2c0.4,0,0.8-0.3,0.8-0.8c0,0,0-0.1,0-0.1v-12.8c0,0,0-0.1,0-0.1c0-0.4-0.3-0.8-0.8-0.8c-0.2,0-0.3,0.1-0.5,0.2L-32,472.3zM-21.4,484.4L-21.4,484.4c2.4-2.1,4-5.2,4-8.7c0-3.5-1.5-6.6-4-8.7l0,0c-0.1-0.1-0.2-0.1-0.4-0.1c-0.3,0-0.6,0.3-0.6,0.6c0,0.1,0,0.3,0.1,0.4l0,0c0,0,0,0,0,0c0,0,0,0,0.1,0.1c2.2,1.9,3.5,4.7,3.5,7.8s-1.4,5.9-3.5,7.8c0,0-0.1,0-0.1,0.1c0,0,0,0,0,0l0,0c-0.1,0.1-0.1,0.2-0.1,0.4c0,0.3,0.3,0.6,0.6,0.6C-21.7,484.5-21.5,484.5-21.4,484.4zM-22.3,480L-22.3,480c1.1-1.1,1.8-2.6,1.8-4.3c0-1.7-0.7-3.2-1.8-4.3l0,0c-0.1-0.1-0.2-0.1-0.3-0.1c-0.3,0-0.6,0.3-0.6,0.6c0,0.1,0,0.2,0.1,0.3l0,0c0,0,0,0,0,0c0,0,0,0,0,0c0.9,0.9,1.4,2.1,1.4,3.4s-0.5,2.5-1.4,3.4c0,0,0,0,0,0c0,0,0,0,0,0l0,0c-0.1,0.1-0.1,0.2-0.1,0.3c0,0.3,0.3,0.6,0.6,0.6C-22.5,480.1-22.4,480.1-22.3,480z"
+                             fill="#676767"/>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <!--声音滑动条-->
+            <AnchorPane fx:id="soundPane" stylesheets="@/css/view/color-slider.css" minWidth="100">
+                <Rectangle fx:id="soundRectangle" arcWidth="5" arcHeight="5" AnchorPane.topAnchor="26"/>
+                <Slider fx:id="soundSlider" AnchorPane.topAnchor="19" value="20"/>
+            </AnchorPane>
+            <!--播放模式切换-->
+            <Button mnemonicParsing="false" onMouseClicked="#toggleSound" maxHeight="30" minHeight="30" prefHeight="30"
+                    style="-fx-background-color: rgba(255, 255, 255, 0);">
+                <graphic>
+                    <ImageView pickOnBounds="true" preserveRatio="true" fitWidth="25" fitHeight="25">
+                        <Image url="@/img/play-model-1.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <!--标准音质-->
+            <Button mnemonicParsing="false" onMouseClicked="#toggleSound" maxHeight="35" minHeight="35" prefHeight="35"
+                    style="-fx-background-color: rgba(255, 255, 255, 0);">
+                <graphic>
+                    <ImageView pickOnBounds="true" preserveRatio="true" fitWidth="36" fitHeight="36">
+                        <Image url="@/img/standard.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <!--音效图标-->
+            <Button mnemonicParsing="false" onMouseClicked="#toggleSound" maxHeight="30" minHeight="30" prefHeight="30"
+                    style="-fx-background-color: rgba(255, 255, 255, 0);">
+                <graphic>
+                    <ImageView pickOnBounds="true" preserveRatio="true" fitWidth="25" fitHeight="25">
+                        <Image url="@/img/sound-effect.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <!--切换歌词面板-->
+            <Button mnemonicParsing="false" onMouseClicked="#toggleSound" maxHeight="30" minHeight="30" prefHeight="30"
+                    style="-fx-background-color: rgba(255, 255, 255, 0);">
+                <graphic>
+                    <ImageView pickOnBounds="true" fitWidth="30" fitHeight="30">
+                        <Image url="@/img/lyrics.png" preserveRatio="true"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <!--切换歌单列表显示/隐藏-->
+            <Button mnemonicParsing="false" onMouseClicked="#toggleSound" maxHeight="30" minHeight="30" prefHeight="30"
+                    style="-fx-background-color: rgba(255, 255, 255, 0);">
+                <graphic>
+                    <ImageView pickOnBounds="true" preserveRatio="true" fitWidth="30" fitHeight="30">
+                        <Image url="@/img/song-list.png"/>
+                    </ImageView>
+                </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+        </HBox>
+    </right>
+</BorderPane>
